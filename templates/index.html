@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eddy Githinji</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <!-- link to fontawesome icons  library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+   
+    <nav class="relative container mx-auto p-5">
+        <!-- flex containter -->
+        <div class="flex items-center justify-between">
+            <div class="flex p-5">
+                <!-- my logo -->
+                <!-- <img src="/images/logoImage.png" alt="logo"> -->
+            </div>
+            <!-- menu items -->
+            <div class="hidden space-x-6 bg-white md:flex">
+                <a href="#" class="hover:text-darkGrayishBlue">About</a>
+                <a href="Blog" class="hover:text-darkGrayishBlue">Blog</a>
+                <a href="#" class="hover:text-darkGrayishBlue">Resume</a>
+
+            </div>
+            <!-- dark  light mode theme switcher -->
+            <!-- <div id="moon"><img src="/images/moon-icon-23626.png" alt="darkThemeSwitch"></div> -->
+            <!-- CTA button -->
+            <a href="mailto: eddygithinji99@gmail.com" class="hidden rounded-full p-3 pt-4 px-6 text-white bg-lightPurple font-bold baseline hover:bg-darkBlue md:block ">Holla Me!</a>
+
+            <!-- mobile menu -->
+            <button id="menu-btn" class="hamburger block md:hidden focus:outline-none">
+                <span class="hamburger-middle"> </span>
+                <span class="hamburger-top"> </span>
+                <span class="hamburger-bottom"> </span>
+            </button>
+        </div>
+
+        <!-- the menu -->
+        <div class="md:hiddden">
+            <div id="menu" class="absolute flex-col self-end items-center hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#" class="hover:text-aqua">About</a>
+                <a href="Blog" class="hover:text-aqua">Blog</a>
+                <a href="#" class="hover:text-aqua">Resume</a>
+
+            </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <!-- intro and picture me -->
+        <div class="space-y-12 ml-7">
+            <img src="/images/EdwinG.jpg" class="border-4 border-solid border-black mt-10 rounded-full mx-auto" id="profile" alt="">
+        </div>
+
+        <div class=" container mx-auto  md:flex-row mt-10">
+            <div class="text-center space-y-6">
+                <h3 class="font-bold text-3xl ">Edwin Githinji.</h3>
+                <p class="space-y-5">Lover and Advocate for Web-Technologies.</p>
+                <p class="space-y-12 small"> Hello! I am a front end web developer, 
+				    With a specialty in designing and developing accesible and responsive websites.
+                </p>
+                <!-- <a href="#" class="rounded-full p-3 pt-4 px-6 text-white bg-lightPurple font-bold baseline hover:bg-darkBlue ">Holla Me!</a> -->
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="why">
+        <!-- normal flow section --tells a story of who i am. -->
+        <div class="text-center container mx-auto mt-10">
+            <h3 class="text-center font-bold mb-10"> What's about Me?</h3>
+            <p class="text-center space-y-15"> 
+                Edwin Githinji enjoys designing & building cool things that work and live on the web. 
+
+                He's passionate of this area because it allows free expression of ideas and optimal inquisitiveness.
+            </p>
+
+            <h3 class="text-center font-bold mb-10 mt-10">Hobbies</h3>
+            <p class="text-center"> It still lives that "Too much work with no play makes Jack a dull boy." That isn't the case here.
+                Whenever not building for the web, you can easily find Him riding a bike or taking Photographs of things people fial to notice.
+            </p>
+        </div>
+    </section>
+    <section id="contact" >
+        <div class="text-center">
+            <h3 class="font-bold text-1xl mt-10">Contact Me</h3>
+            <p class="font-xs">
+                Hit me up at <a class="font-bold decotation-green-500" href="mailto: eddygithinji99@gmail.com">eddygithinji99@gmail.com</a> and I'll be glad to talk to you as soon as I get the message.
+            </p>
+            <p class="font-xs mb-7">
+                Also can reach me via the listed below Social Networks.
+            </p>
+
+
+            <hr class="border-solid border-darkGrayishBlue">
+
+            <div id="social container">
+                <div class="flex w-5 h-5 mx-auto mt-10 space-x-5">
+                    <a href="https://www.facebook.com/eddy.githinji/5" class="fa fa-facebook"></a>
+                    <a href="" class="fa fa-twitter "></a>
+                    <a href="" class="fa fa-linkedin "></a>
+                    <a href="" class="fa fa-github "></a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer class="footer m-10">
+		<p class="text-center font-bold bg-lightGrey">&copy; EddyGithinji @2021</p>
+	</footer>
+    <script src="/js/main.js"></script>
+</body>
+</html>

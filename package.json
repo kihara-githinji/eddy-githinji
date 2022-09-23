@@ -1,0 +1,16 @@
+{
+  "name": "teddy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./tail.css/input.css -o ./dist/output.css",
+    "watch": "tailwindcss -i ./tail.css/input.css -o ./dist/output.css --watch"
+  },
+  "keywords": [],
+  "author": "eddy githinji",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}

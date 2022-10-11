@@ -17,26 +17,14 @@ btn.addEventListener('click', () => {
 
 // adds the poetry verse when the mouse hovers over the image.
 
-poem.addEventListener('click', () =>{
-    prompt('welcome to poetry')
-
-})
 
 
-// doctionary for the properties of the products that i love creating.
+
 
 let properties = [
     "flexible", "scalable", "accessible", "responsive", "fast", "secure", "visually attractive", 
 ]
 
-for (let index = 0; index < properties.length; index++) {
-    // const property = properties[index];
-    let jump = document.getElementsByClassName('.jump');
-    function name(params) {
-        
-    }
-
-}
 
 
 

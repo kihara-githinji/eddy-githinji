@@ -8,9 +8,13 @@
     width: 250px;
     object-fit: cover;
 }
-#moon{
+/* #moon{
     width: 2.3rem;
     height: 2.3rem;
+} */
+
+body{
+    background-image: url(/images/scattered-forcefields.svg);
 }
 
 /* humburgher menu */
@@ -56,3 +60,43 @@
     transform: rotate(-45deg) translate(-6px) translateY(6px);
     
 }
+
+/* get in touch second link */
+.talk{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+/* container icons for devicons */
+.container-icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    text-align: center;
+    
+}
+.box-icon{
+    padding: 5px;
+    margin-bottom: 3rem;
+}
+
+.container-icons .devicon, .container-icons .fab, .container-icons .fas {
+    color: rgb(76, 76, 76);
+    font-size: 3.5rem;
+}
+.box-icon p{
+    line-height: 1.55;
+    font-size: 1rem;
+}
+
+
+/* rounded poetry paragraphs */
+.poetry{
+    border-radius: 20px;
+}
+/* #poetry{
+    overflow: scroll;
+} */
+

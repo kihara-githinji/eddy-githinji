@@ -2,8 +2,12 @@
 // to add work exprience as list of a list wrapped in a section.
 
 
-const btn = document.getElementById('menu-btn')
-const nav = document.getElementById('menu')
+const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('menu');
+const para = document.getElementById('#poetry');
+const poem = document.getElementById('#poImage');
+
+
 
 btn.addEventListener('click', () => {
     btn.classList.toggle('open');
@@ -11,12 +15,28 @@ btn.addEventListener('click', () => {
     nav.classList.toggle('flex');
 })
 
-// code for the dark/light theme swich as moon.
+// adds the poetry verse when the mouse hovers over the image.
 
-const trip = document.getElementById("darkSwitch")
+poem.addEventListener('click', () =>{
+    prompt('welcome to poetry')
 
-
-trip.addEventListener('click', () => {
-    trip.classList.toggle('dark');
 })
+
+
+// doctionary for the properties of the products that i love creating.
+
+let properties = [
+    "flexible", "scalable", "accessible", "responsive", "fast", "secure", "visually attractive", 
+]
+
+for (let index = 0; index < properties.length; index++) {
+    // const property = properties[index];
+    let jump = document.getElementsByClassName('.jump');
+    function name(params) {
+        
+    }
+
+}
+
+
 

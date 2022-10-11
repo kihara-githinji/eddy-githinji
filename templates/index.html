@@ -8,41 +8,43 @@
     <link rel="stylesheet" href="/dist/output.css">
     <!-- link to fontawesome icons  library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- link to devicons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
 
 </head>
 <body>
-   
-    <nav class="relative container mx-auto p-5">
-        <!-- flex containter -->
-        <div class="flex items-center justify-between">
-            <div class="flex p-5">
-                <!-- my logo -->
-                <!-- <img src="/images/logoImage.png" alt="logo"> -->
+    
+    <nav class="relative container mx-auto p-5 fixed ">
+            <!-- flex containter -->
+            <div class="flex items-center justify-between">
+                    <div class="flex p-5">
+                        <!-- my logo -->
+                        <!-- <img src="/images/logoImage.png" alt="logo"> -->
+                    </div>
+                    <!-- menu items -->
+                    <div class="hidden space-x-6 bg-white font-bold  md:flex">
+                        <a href="#about" class="hover:text-darkGrayishBlue">About</a>
+                        <a href="Blog" class="hover:text-darkGrayishBlue">Blog</a>
+                        <a href="#" class="hover:text-darkGrayishBlue">Resume</a>
+        
+                    </div>
+                    <!-- dark  light mode theme switcher -->
+                    <!-- <div id="moon"><img src="/images/moon-icon-23626.png" alt="darkThemeSwitch"></div> -->
+                    <!-- CTA button -->
+                    <a href="mailto: eddygithinji99@gmail.com" class="hidden rounded-full p-3 pt-4 px-6 text-white bg-midnightNavyBlue font-bold baseline hover:bg-brightOrange md:block ">Holla Me!</a>
+                        <!-- mobile menu -->
+                <button id="menu-btn" class="hamburger block md:hidden focus:outline-none">
+                    <span class="hamburger-middle"> </span>
+                    <span class="hamburger-top"> </span>
+                    <span class="hamburger-bottom"> </span>
+                </button>
             </div>
-            <!-- menu items -->
-            <div class="hidden space-x-6 bg-white md:flex">
-                <a href="#" class="hover:text-darkGrayishBlue">About</a>
-                <a href="Blog" class="hover:text-darkGrayishBlue">Blog</a>
-                <a href="#" class="hover:text-darkGrayishBlue">Resume</a>
-
-            </div>
-            <!-- dark  light mode theme switcher -->
-            <!-- <div id="moon"><img src="/images/moon-icon-23626.png" alt="darkThemeSwitch"></div> -->
-            <!-- CTA button -->
-            <a href="mailto: eddygithinji99@gmail.com" class="hidden rounded-full p-3 pt-4 px-6 text-white bg-lightPurple font-bold baseline hover:bg-darkBlue md:block ">Holla Me!</a>
-
-            <!-- mobile menu -->
-            <button id="menu-btn" class="hamburger block md:hidden focus:outline-none">
-                <span class="hamburger-middle"> </span>
-                <span class="hamburger-top"> </span>
-                <span class="hamburger-bottom"> </span>
-            </button>
-        </div>
 
         <!-- the menu -->
         <div class="md:hiddden">
             <div id="menu" class="absolute flex-col self-end items-center hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                <a href="#" class="hover:text-aqua">About</a>
+                <a href="#about" class="hover:text-aqua">About</a>
                 <a href="Blog" class="hover:text-aqua">Blog</a>
                 <a href="#" class="hover:text-aqua">Resume</a>
 
@@ -50,69 +52,218 @@
         </div>
     </nav>
 
-    <section id="hero">
-        <!-- intro and picture me -->
-        <div class="space-y-12 ml-7">
-            <img src="/images/EdwinG.jpg" class="border-4 border-solid border-black mt-10 rounded-full mx-auto" id="profile" alt="">
-        </div>
+   
+    
 
-        <div class=" container mx-auto  md:flex-row mt-10">
-            <div class="text-center space-y-6">
-                <h3 class="font-bold text-3xl ">Edwin Githinji.</h3>
-                <p class="space-y-5">Lover and Advocate for Web-Technologies.</p>
-                <p class="space-y-12 small"> Hello! I am a front end web developer, 
-				    With a specialty in designing and developing accesible and responsive websites.
+       
+
+    <section id="hero">
+        <!-- <div class="curve1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div> -->
+        <!-- intro and picture me -->
+       
+
+        <div class="flex flex-col container mx-auto items-center px-6 mt-10 md:space-y-0 md:flex-row ">
+            
+            <div class="text-center flex flex-col md-32 space-y-12  md:w-1/2">
+                <h3 class="max-w-md text-center text-5xl font-500 md:text-5xl md:text-left">G'day! I am Eddy.</h3>
+                <p class="max-w-sm text-darkGrayishBlue md:text-left text-2xl">Lover and Advocate for Web-Technologies that are 
+                <span class="jump max-w-sm text-lightPurple text-2xl">Scalable!</span></p>
+                <p class="space-y-12 small text-left"> I love crafting and flexible and scalable frontend products with great experiences.
                 </p>
-                <!-- <a href="#" class="rounded-full p-3 pt-4 px-6 text-white bg-lightPurple font-bold baseline hover:bg-darkBlue ">Holla Me!</a> -->
+                <!-- <div class="flex justify-center md:justify-start">
+                    <a href="mailto: eddygithinji99@gmail.com" class="hidden rounded-full p-3 pt-4 px-6 text-white bg-brightOrange font-bold baseline hover:bg-midnightNavyBlue md:block ">Holla Me!</a>
+                </div> -->
+                
+            </div>
+            <div class="space-y-12 ml-7 max-w-md md:w-1/2">
+                <img src="/images/Sweet_Pea_Pattern.jpg" class=" mt-10 mx-auto sm:hidden md:flex" id="profile" alt="">
             </div>
             
         </div>
     </section>
 
-    <section id="why">
+    <section id="about">
         <!-- normal flow section --tells a story of who i am. -->
-        <div class="text-center container mx-auto mt-10">
-            <h3 class="text-center font-bold mb-10"> What's about Me?</h3>
-            <p class="text-center space-y-15"> 
-                Edwin Githinji enjoys designing & building cool things that work and live on the web. 
+        <div class="text-left container mx-auto mt-10">
+            <h2 class="text-left font-bold text-2xl mb-10"> About</h2>
+            <h3 class="font-bold text-2xl text-left mb-10 ">Who's Eddy?</h3>
 
-                He's passionate of this area because it allows free expression of ideas and optimal inquisitiveness.
-            </p>
-
-            <h3 class="text-center font-bold mb-10 mt-10">Hobbies</h3>
-            <p class="text-center"> It still lives that "Too much work with no play makes Jack a dull boy." That isn't the case here.
-                Whenever not building for the web, you can easily find Him riding a bike or taking Photographs of things people fial to notice.
-            </p>
+            <div class="flex flex-col md:flex-row">
+                <!-- about image -->
+                <div class="space-y-12 ml-7  md:w-1/2">
+                    <img src="/images/EdwinG.jpg" class="max-w-md border-4 mb-6 border-solid border-brightOrange mt-10 rounded-full mx-auto md:w-1/2" id="profile" alt="">
+                </div>
+                <div class="text-left md:ml-20 flex-col-reverse">
+                    <p class="text-left space-y-15 mb-6"> 
+                        I am passionate about building both the technical and visual aspects of nice things that live on the web.
+                        The freedom to express my ideas and imaginations sparks the quenchless passion to learn and keep building.
+                    </p>
+                            <p class="mb-6">
+                                I have a BS in Information Technology from Mount Kenya University (Ke), a Diploma in Information Technology from East Africa Institute of Certified Studies and other certifications from indipendent organisations.
+                            </p>
+                    <p class="mb-6">My best moments are when building, learning and exploring new technologies and definitely when thinking of creative ways to solve problems.</p>
+                    <p>You can always reach out to me and I'll be glad to talk to you earliest. I won't bite, and I'm not scary, I promise😜.
+                    <br>
+                    <a class="talk font-bold hover:text-brightOrange" href="mailto: eddygithinji99@gmail.com">Get in Touch!</a>
+                </p>
+                </div>  
+            </div>
         </div>
+    </section>   
+    
+
+    <!-- my skills and tool set -->
+    <section class="skills mt-10">
+        <div class="container mx-auto">
+                <h2 class="font-bold text-left text-2xl my-10">Skills and Tools</h2>
+                <h3 class="font-light text-left my-10 text-3xl">Here comes... The tool box and thing I can do.</h3>
+                    <div class="container-icons">
+                        <div class="box-icon ml-5 md:ml-8">
+                          <i class="devicon devicon-html5-plain" aria-hidden="true"></i>
+                          <p>HTML5</p>
+                        </div>
+                        <div class="box-icon ml-5 md:ml-8">
+                          <i class="devicon devicon-css3-plain" aria-hidden="true"></i>
+                          <p>CSS3</p>
+                        </div>
+                        <div class="box-icon ml-5 md:ml-8">
+                          <i class="devicon devicon-javascript-plain" aria-hidden="true"></i>
+                          <p>JavaScript</p>
+                        </div>
+                        <div class="box-icon ml-5 md:ml-8">
+                          <i class="devicon devicon-git-plain" aria-hidden="true"></i>
+                          <p>Git</p>
+                        </div>
+                        <div class="box-icon ml-5 md:ml-8">
+                          <i class="devicon devicon-github-plain" aria-hidden="true"></i>
+                          <p>Github</p>
+                        </div>
+                       
+                        <div class="box-icon ml-5 md:ml-8">
+                          <i class="devicon fas fa-terminal" aria-hidden="true"></i>
+                          <p>Command Line</p>
+                        </div>
+                        <div class="box-icon ml-5 md:ml-8">
+                          <i class="devicon devicon-visualstudio-plain" aria-hidden="true"></i>
+                          <p>VS Code</p>
+                        </div>
+                        <!-- <div class="box-icon">
+                          <div class="container-img-i i-responsive">
+                             This icon by Freepik from "https://www.flaticon.com/" -->
+                            <!-- <img src="./assets/icon-tablet-phone-and-browser.svg" alt="icon of tablet, phone and browser window." aria-hidden="true">
+                          </div> 
+                          <p>Responsive Websites</p>
+                        </div>-->
+                        
+                        <div class="box-icon ml-5 md:ml-8">
+                          <i class="devicon devicon-wordpress-plain" aria-hidden="true"></i>
+                          <p>WordPress</p>
+                        </div>
+                        <!-- <div class="box-icon">
+                          <i class="fab fa-adobe" aria-hidden="true"></i>
+                          <p>Adobe Suite</p>
+                        </div> -->
+                    </div>
+        </div>
+        
     </section>
+
+    <section class="hobbies">
+            <div class="container mx-auto">
+                <h3 class="text-left font-bold mb-10 mt-10">Hobbies</h3>
+                <p class="text-left text-2xl font-light"> Other than building for the web, I also live for:</p>
+
+                <div class="flex flex-col space-y-6 md:flex-row mt-10 justify-around">
+                    <div class="font-bold">
+                        <img src="/images/poetry.png" alt="poetry" id="poImage" class="w-20 h-20 flex mx-auto border-black border-solid border-4 rounded-full" >
+                        <h4 class="text-center">Poetry</h4>
+                        <!-- <div class="md:hidden id="poetry"> -->
+                            <p class="p-5 text-center font-light my-5 mx-4 max-w-sm md:text-left md:bg-black md:text-darkGrayishBlue" >
+                                The sun rises, minute by minute
+                                And by day through the horizon we witness
+                                The fading of its glow;
+                                Confident plants did grow.
+                                And impatiently awaited its glory is
+                                Long before it fades. 
+                                <br>
+                                <br>
+                                The heights of our prime
+                                Where our brows wrinkle
+                                Pronounced becomes our twinkle.
+                                But what with resplendence?
+                                <br>
+                                <br>
+                                The sun jades not.
+                                To do creation well is its duty
+                                To share therewith in its glory 
+                                To nourish and make whole 
+                                To be the light and guide.
+                                <br>
+                                <br>
+                                Oh! The day was a gem?
+                                Share the glory!
+                                </p>
+                        <!-- </div> -->
+                    </div>
+                    <div class="font-bold w-15">
+                        <img src="/images/bread.png" alt="poetry" class="w-20 h-20 flex mx-auto border-black border-solid border-4 rounded-full">
+                        <h4 class="text-center">Baking</h4>
+                        <p class="text-center font-light my-5 max-w-sm mx-4 md:text-left">
+                        Found out sometimes ago that <br> with four simple ingridients,<br><i>(flour, salt, water and yeast)</i>   one can make a variety of great tasting bread.
+                        </p>
+                    </div>
+                    <div class="font-bold">
+                        <img src="/images/butterflies.png" alt="poetry" class="w-20 h-20 flex mx-auto border-black border-solid border-4 rounded-full">
+                        <h4 class="text-center">Photography</h4>
+                        <p class="text-center font-light my-5 max-w-sm mx-4 md:text-left">
+                            The little things people fail to notice are the most beautiful.  These I take profound photographs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+           
+<!-- a flex view of hobbies with images and animations() -->
+<!-- arrange the layers with figma and animate with css -->
+
+
+
+
+
+    
     <section id="contact" >
-        <div class="text-center">
-            <h3 class="font-bold text-1xl mt-10">Contact Me</h3>
-            <p class="font-xs">
-                Hit me up at <a class="font-bold decotation-green-500" href="mailto: eddygithinji99@gmail.com">eddygithinji99@gmail.com</a> and I'll be glad to talk to you as soon as I get the message.
-            </p>
-            <p class="font-xs mb-7">
-                Also can reach me via the listed below Social Networks.
-            </p>
-
-
-            <hr class="border-solid border-darkGrayishBlue">
-
-            <div id="social container">
-                <div class="flex w-5 h-5 mx-auto mt-10 space-x-5">
+            <div class="container mx-auto ">
+                <div class="contact">
+                     <h3 class="font-bold text-1xl mt-10">Contact Me</h3>
+                    <p class="font-xs">
+                    Hit me up at 
+                    <a class="font-bold decotation-green-500" href="mailto: eddygithinji99@gmail.com">eddygithinji99@gmail.com</a> and I'll be glad to talk to you as soon as I get the message.
+                    </p>
+                    <p class="font-light mb-7">Also can reach me via the listed below Social Networks.</p>
+                </div>
+            </div>
+<hr class="border-solid border-3 border-darkGrayishBlue mt-10">
+           <div id="social container mt-5 mx-auto"> 
+                
+                <div class="container flex flex-row items-center max-w-md h-5 mx-auto">
                     <a href="https://www.facebook.com/eddy.githinji/5" class="fa fa-facebook"></a>
-                    <a href="" class="fa fa-twitter "></a>
-                    <a href="" class="fa fa-linkedin "></a>
-                    <a href="" class="fa fa-github "></a>
+                    <a href="" class="fa fa-twitter mx-7"></a>
+                    <a href="" class="fa fa-linkedin mx-7"></a>
+                    <a href="" class="fa fa-github mx-7"></a>
 
                 </div>
             </div>
-
-        </div>
+       
     </section>
     
-    <footer class="footer m-10">
-		<p class="text-center font-bold bg-lightGrey">&copy; EddyGithinji @2021</p>
+    
+    <footer class="footer m-10 max-w-md mx-auto">
+		<p class="text-center font-bold bg-lightGrey">&copy; EddyGithinji @2021-2022</p>
 	</footer>
     <script src="/js/main.js"></script>
 </body>

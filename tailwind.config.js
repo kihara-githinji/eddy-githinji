@@ -8,7 +8,9 @@ module.exports = {
         darkGrayishBlue: 'hsl(227, 12%, 61%)',
         veryDarkBlue: 'hsl(233, 12%, 13%)',
         aqua: 'hsl(178, 100%, 50%)',
-        lightPurple: 'hsl(263, 100%, 79.6%)'
+        lightPurple: 'hsl(263, 100%, 79.6%)',
+        brightOrange: '#FD5800',
+        midnightNavyBlue: '#191975'
       },
       darkMode: 'Class',
 

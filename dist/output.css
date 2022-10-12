@@ -609,6 +609,11 @@ video {
   margin: 2.5rem;
 }
 
+.mx-5 {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -654,16 +659,12 @@ video {
   margin-left: 1.25rem;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
 .mb-7 {
   margin-bottom: 1.75rem;
 }
 
-.ml-10 {
-  margin-left: 2.5rem;
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .block {
@@ -686,24 +687,8 @@ video {
   height: 1.25rem;
 }
 
-.h-1 {
-  height: 0.25rem;
-}
-
-.h-7 {
-  height: 1.75rem;
-}
-
-.h-40 {
-  height: 10rem;
-}
-
 .w-20 {
   width: 5rem;
-}
-
-.w-1 {
-  width: 0.25rem;
 }
 
 .max-w-md {
@@ -840,6 +825,11 @@ video {
   text-align: center;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -848,11 +838,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -897,6 +882,7 @@ video {
 
 body{
   background-image: url(/images/scattered-forcefields.svg);
+  font-family: 'Pompiere', Helvetica, sans-serif  ;
 }
 
 /* humburgher menu */
@@ -989,8 +975,10 @@ body{
     overflow: scroll;
 } */
 
-img .waves{
-  transform: rotateY('180deg');
+@media screen and (max-width: '480px') {
+  .hero1{
+    background-image: url('/images/Sweet_Pea_Pattern.jpg');
+  }
 }
 
 .hover\:bg-brightOrange:hover {

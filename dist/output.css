@@ -883,6 +883,7 @@ video {
 body{
   background-image: url(/images/scattered-forcefields.svg);
   font-family: 'Pompiere', Helvetica, sans-serif  ;
+  scroll-behavior: smooth;
 }
 
 /* humburgher menu */

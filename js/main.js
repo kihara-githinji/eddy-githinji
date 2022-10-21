@@ -15,15 +15,22 @@ btn.addEventListener('click', () => {
     nav.classList.toggle('flex');
 })
 
+
+// instantiate smooth scroll
+const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500,
+    speedAsDuration: true
+});
+
 // adds the poetry verse when the mouse hovers over the image.
 
 
 
 
 
-let properties = [
-    "flexible", "scalable", "accessible", "responsive", "fast", "secure", "visually attractive", 
-]
+// let properties = [
+//     "flexible", "scalable", "accessible", "responsive", "fast", "secure", "visually attractive", 
+// ]
 
 
 

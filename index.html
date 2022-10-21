@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="edwin githinji, frontend developer, developers kenya, web-development, web developers">
     <title>ed.g.tosh</title>
     <link rel="stylesheet" href="dist/output.css">
     
@@ -11,6 +12,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pompiere">
+	<!--link: smooth scroll cdn-->
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js" defer></script>
           
 
 </head>
@@ -25,7 +28,7 @@
                     </div>
                     <!-- menu items -->
                     <div class="hidden space-x-6 bg-white font-bold  md:flex">
-                        <a href="#about" class="hover:text-darkGrayishBlue">About</a>
+                        <a data-scroll href="#about" class="hover:text-darkGrayishBlue">About</a>
                         <a href="Blog" class="hover:text-darkGrayishBlue">Blog</a>
                         <a href="#" class="hover:text-darkGrayishBlue">Resume</a>
         
@@ -45,7 +48,7 @@
         <!-- the menu -->
         <div class="md:hiddden">
             <div id="menu" class="absolute flex-col self-end items-center hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                <a href="#about" class="hover:text-aqua">About</a>
+                <a data-scroll href="#about" class="hover:text-aqua">About</a>
                 <a href="Blog" class="hover:text-aqua">Blog</a>
                 <a href="#" class="hover:text-aqua">Resume</a>
 

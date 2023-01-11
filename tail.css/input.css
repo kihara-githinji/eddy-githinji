@@ -14,7 +14,7 @@
 } */
 
 body{
-    background-image: url(images/scattered-forcefields.svg);
+    background-image: url(/images/scattered-forcefields.svg);
     font-family: 'Pompiere', Helvetica, sans-serif  ;
     scroll-behavior: smooth;
 
@@ -69,6 +69,10 @@ body{
 .talk{
     text-decoration: underline;
     font-style: italic;
+}
+
+#typer{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 

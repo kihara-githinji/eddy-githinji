@@ -14,7 +14,7 @@
 } */
 
 body{
-    background-image: url(/images/scattered-forcefields.svg);
+    background-image: url('/images/scattered-forcefields.svg');
     font-family: 'Pompiere', Helvetica, sans-serif  ;
     scroll-behavior: smooth;
 
@@ -65,14 +65,16 @@ body{
     
 }
 
+/* make a cursor */
+.txt-type > .txt{
+    border-right: 0.2rem solid #000;
+    
+}
+
 /* get in touch second link */
 .talk{
     text-decoration: underline;
     font-style: italic;
-}
-
-#typer{
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 
@@ -99,14 +101,6 @@ body{
     font-size: 1rem;
 }
 
-
-/* rounded poetry paragraphs */
-.poetry{
-    border-radius: 20px;
-}
-/* #poetry{
-    overflow: scroll;
-} */
 
 @media screen and (max-width: '480px') {
     .hero1{

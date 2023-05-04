@@ -15,12 +15,12 @@
 
 body{
     background-image: url('/images/scattered-forcefields.svg');
-    font-family: 'Pompiere', Helvetica, sans-serif  ;
+    font-family: 'Quicksand', sans-serif  ;
     scroll-behavior: smooth;
 
 }
 h1, h2, h3, h4, h5, h6{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Eb Garamond', Times, serif;
 }
 
 /* humburgher menu */

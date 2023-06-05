@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -111,3 +112,119 @@ h1, h2, h3, h4, h5, h6{
     }
     
 }
+=======
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#profile{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+/* #moon{
+    width: 2.3rem;
+    height: 2.3rem;
+} */
+
+body{
+    background-image: url('/images/scattered-forcefields.svg');
+    font-family: 'Quicksand', sans-serif  ;
+    scroll-behavior: smooth;
+
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Eb Garamond', serif;
+    text-transform: uppercase;
+}
+
+/* humburgher menu */
+.hamburger{
+    cursor: pointer;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    
+}
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: black;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+.hamburger-middle{
+    transform: translateY(6px);
+}
+.hamburger-bottom{
+    transform: translateY(12px);
+}
+
+.open{
+    transform: rotate(90deg);
+    transform: translateY(0px);
+
+}
+.open .hamburger-top{
+    transform: rotate(45deg) translate(6px) translateY(6px);
+    
+}
+.open .hamburger-middle{
+    display: none;
+}
+.open .hamburger-bottom{
+    transform: rotate(-45deg) translate(-6px) translateY(6px);
+    
+}
+
+/* make a cursor */
+.txt-type > .txt{
+    border-right: 0.2rem solid #000;
+    
+}
+
+/* get in touch second link */
+.talk{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+/* container icons for devicons */
+.container-icons{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    text-align: center;
+    
+}
+.box-icon{
+    padding: 5px;
+    margin-bottom: 3rem;
+}
+
+.container-icons .devicon, .container-icons .fab, .container-icons .fas {
+    color: rgb(76, 76, 76);
+    font-size: 3.5rem;
+}
+.box-icon p{
+    line-height: 1.55;
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: '480px') {
+    .hero1{
+        background-image: url('/images/Sweet_Pea_Pattern.jpg');
+    }
+    
+}
+>>>>>>> 51aec511c7e302796e8c9c3ac824b4a46eee65e7
